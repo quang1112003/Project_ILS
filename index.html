@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Team Score Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main-content">
+        <img src="pointing.png" alt="pointing" class="pointing-image">
+        <div class="wheel-container">
+            <div class="header">
+                <h1>You receive</h1>
+                <p id="winner">NONE</p>
+            </div>
+            <div class="wheel">
+                <canvas id="canvas" width="400" height="400"></canvas>
+                <div class="center-circle" onclick="spin()">
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="sidebar">
+        <h1>🏆 Team Score Tracker 🏆</h1>
+        <div class="teams" id="teams"></div>
+        <div class="controls">
+            <div class="input-group">
+                <input type="number" id="addPoints" placeholder="Add points" min="0">
+                <input type="number" id="subtractPoints" placeholder="Subtract points" min="0">
+                <select id="teamSelect"></select>
+            </div>
+            <div class="button-group">
+                <button onclick="updateScore()">Update Score</button>
+                <button onclick="resetAllScores()" class="reset-button">↺</button>
+            </div>
+        </div>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
