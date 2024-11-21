@@ -1,8 +1,8 @@
 const teams = [
-    { name: "Red Dragons", color: "#ff6b6b" },
-    { name: "Blue Sharks", color: "#54a0ff" },
-    { name: "Green Vipers", color: "#B1DDC9" },
-    { name: "Pink Panthers", color: "#FFB6C1" }
+    { name: "Team 1", color: "#ff6b6b" },
+    { name: "Team 2", color: "#54a0ff" },
+    { name: "Team 3", color: "#B1DDC9" },
+    { name: "Team 4", color: "#FFB6C1" }
 ];
 
 let scores = {};
@@ -254,7 +254,7 @@ const wheelItems = [
     { 
         id: 14, 
         name: "Time Bomb", 
-        description: "Lose 2 points every 10 seconds until the challenge is completed.",
+        description: "Lose 5 points every 10 seconds until the challenge is completed.",
         imagePath: "images/image14.png"
     },
     { 
